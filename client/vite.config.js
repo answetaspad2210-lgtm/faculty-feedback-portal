@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 // Dev-server proxy so the client can call /api/... without hardcoding
 // the backend URL, and without hitting CORS during local development.
 export default defineConfig({
+  base: '/faculty-feedback-portal/',
   plugins: [react()],
   server: {
     port: 5173,
